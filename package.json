@@ -1,0 +1,12 @@
+{
+  "name": "trifecta",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:makedonian/trifecta.git",
+  "author": "Bo Petkovski <bo@nerd.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}

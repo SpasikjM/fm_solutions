@@ -1,0 +1,160 @@
+
+/**
+Style rules for Section one
+**/
+
+.sectionOne__left--text {
+    color: var(--color-warm-black);
+    font-family: var(--font-1);
+    font-size: var(--body-medium);
+}
+
+.sectionOne__left--disclosure {
+    color: var(--color-warm-black);
+    font-family: var(--font-1);
+    font-size: var(--body-large);
+    font-weight: 500;
+}
+
+/**
+Style rules for Section two
+**/
+
+.sectionTwo__right--text {
+    color: var(--color-warm-black);
+    font-family: var(--font-1);
+    font-size: var(--body-large);
+    font-weight: 400;
+}
+
+.sectionTwo__right--btn {
+    align-self: start;
+    margin-top: 25px;
+}
+
+/**
+Style rules for Section three
+**/
+
+.sectionThree__left--text {
+    color: var(--color-warm-black);
+    font-family: var(--font-1);
+    font-size: var(--body-large);
+    font-weight: 400;
+}
+
+/**
+Style rules for cards
+**/
+
+
+.sectionContact__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 80px 0;
+}
+
+[class ^="sectionContact__cards--"] {
+    box-shadow: var(--shadow-1);
+}
+
+.sectionContact__cards--1,
+.sectionContact__cards--2,
+.sectionContact__cards--3 {
+    border-radius: 8px;
+    padding: 15px;
+    font-size: var(--body-medium);
+    font-family: var(--font-1);
+}
+
+.sectionContact__cards--1 i,
+.sectionContact__cards--2 i,
+.sectionContact__cards--3 i {
+        cursor: pointer;
+        font-size: var(--h2);
+        color: var(--color-icons-blue);
+
+}
+
+.email,
+.phone,
+.location {
+    color: var(--color-text-link);
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.cardBody {
+    margin-top: 20px;
+}
+
+
+
+.sectionThree__keyF {
+    padding-top: 35px;
+}
+
+
+.sectionKeyfeatures__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 80px 0;
+}
+
+
+.sectionTwo__filter {
+    gap: 20px;
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.filter-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
+  
+  /* Style for dropdown */
+  #categoryDropdown {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    transition: border 0.3s ease;
+  }
+
+
+  .sectionCatalog__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 80px 0;
+}
+
+.gallerySmall {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.galleryLarge {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}

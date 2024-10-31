@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="assets/img/Frame favicon.svg" />
+        <link rel="stylesheet" href="assets/css/designSystem.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Master Frame Solutions -Home</title>
+    </head>
+    <body>
+        <div class="hero">
+            <div class="navbar container">
+                <div class="navbar__logo">
+                    <img src="assets/img/Logo.svg" alt="" class="navbar__logo--image" />
+                </div>
+                <div class="navbar__menu hidden">
+                    <a href="index.html" class="navbar__menu--1">Home</a>
+                    <a href="mouldings catalog.html" class="navbar__menu--2">Mouldings</a>
+                    <a href="mat boards.html" class="navbar__menu--3">Mat boards</a>
+                    <a href="key features.html" class="navbar__menu--4">Key features</a>
+                    <a href="contact.html" class="navbar__menu--5">Contact</a>
+                </div>
+
+                <div class="navbar__icons">
+                    <i class="bi bi-list"></i>
+                    <i class="bi bi-x-lg hide"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__image">
+            <img src="assets/img/Hero_mouldings.png" alt="" class="hero__image" />
+        </div>
+
+        <div class="sectionOne container grid-full">
+            <div class="sectionOne flex">
+                <div class="sectionOne__left--title common-title">Moulding Catalog</div>
+                <div class="sectionOne__left--text">
+                    At Master Frame Solutions , we understand that finding the perfect product is crucial. That's why we've introduced a powerful catalog filtering feature to
+                    streamline your search and help you discover exactly what you're looking for.
+                </div>
+            </div>
+
+            <div class="sectionThree__keyF flex">
+                <div class="sectionThree__left--title small-title">How to Use Our Catalog:</div>
+                <div class="sectionThree__left--text">
+                    <ol>
+                        <li>Browse: Take your time exploring our diverse selection.</li>
+                        <li>Select: Note the product codes and collection of the mouldings that catch your eye.</li>
+                        <li>Inquire: Contact our friendly team for pricing, customization options, and any additional information.</li>
+                        <li>Contact Information: email at: info@box-ux.com</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="sectionTwo__filter container">
+            <div class="label">Sort by:</div>
+            <div class="filters">
+                <div class="filter-container">
+                    <select id="categoryDropdown" onchange="filterItems()">
+                        <option value="all">All</option>
+                        <option value="art">Art</option>
+                        <option value="photography">Photography</option>
+                        <option value="decor">Decor</option>
+                    </select>
+                </div>
+
+                <div class="filter-container">
+                    <select id="categoryDropdown" onchange="filterItems()">
+                        <option value="all">All</option>
+                        <option value="art">Art</option>
+                        <option value="photography">Photography</option>
+                        <option value="decor">Decor</option>
+                    </select>
+                </div>
+
+                <div class="filter-container">
+                    <select id="categoryDropdown" onchange="filterItems()">
+                        <option value="all">All</option>
+                        <option value="art">Art</option>
+                        <option value="photography">Photography</option>
+                        <option value="decor">Decor</option>
+                    </select>
+                </div>
+
+                <div class="filter-container">
+                    <select id="categoryDropdown" onchange="filterItems()">
+                        <option value="all">All</option>
+                        <option value="art">Art</option>
+                        <option value="photography">Photography</option>
+                        <option value="decor">Decor</option>
+                    </select>
+                </div>
+
+                <button class="dark-btn" onclick="filterSelection('colors')">Apply</button>
+            </div>
+        </div>
+
+        <div class="sectionCatalog container">
+            <div class="sectionCatalog__cards">
+                <div class="sectionCatalog__card--1">
+                    <img src="assets/img/catalog_img_full.png" alt="" class="" />
+                    <div class="title label">Gallery</div>
+                    <div class="gallerySmall">
+                        <img src="assets/img/gallerySmall_img 1.png" alt="" class="" />
+                        <img src="assets/img/gallerySmall_img 2.png" alt="" class="" />
+                        <img src="assets/img/gallerySmall_img 3.png" alt="" class="" />
+                        <img src="assets/img/gallerySmall_img 4.png" alt="" class="" />
+                    </div>
+                </div>
+                <div class="sectionCatalog__card--2">
+                    <div class="title label">Description</div>
+                    <div class="width">Width: 17mm</div>
+                    <div class="heigh">Height: 27mm</div>
+                    <div class="rebate">Rebate: 20mm</div>
+                    <div class="color">Color: Red</div>
+                    <hr />
+                </div>
+                <div class="sectionCatalog__card--3">
+                    <div class="title label">Colors</div>
+                    <div class="galleryLarge">
+                        <img src="assets/img/gallerySmall_img 1.png" alt="" class="" />
+                        <img src="assets/img/gallerySmall_img 2.png" alt="" class="" />
+                        <img src="assets/img/gallerySmall_img 3.png" alt="" class="" />
+                        <img src="assets/img/gallerySmall_img 1.png" alt="" class="" />
+                        <img src="assets/img/gallerySmall_img 2.png" alt="" class="" />
+                        <img src="assets/img/gallerySmall_img 3.png" alt="" class="" />
+                        <img src="assets/img/gallerySmall_img 1.png" alt="" class="" />
+                        <img src="assets/img/gallerySmall_img 2.png" alt="" class="" />
+                        <img src="assets/img/gallerySmall_img 3.png" alt="" class="" />
+                        <img src="assets/img/gallerySmall_img 1.png" alt="" class="" />
+                        <img src="assets/img/gallerySmall_img 2.png" alt="" class="" />
+                        <img src="assets/img/gallerySmall_img 3.png" alt="" class="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerWrapper">
+            <div class="footerLinks container">
+                <div class="footerLinks__logo">
+                    <a href="index.html">
+                        <img src="assets/img/Logo.svg" alt="" class="navbar__logo--image" />
+                    </a>
+                </div>
+                <div class="footerLinks__copyright">©FM Solutions, 2024. All rights reserved.</div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+:root {
+    --h1: 40px;
+    --h2: 32px;
+    --h3: 28px;
+    --h4: 24px;
+    --h5: 20px;
+    --h6: 16px;
+
+    --sub: 20px;
+
+    --label: 18px;
+    --ls: 5px;
+
+    --body: 16px;
+    --body-medium: 18px;
+    --body-large: 20px;
+
+    --font-1: 'Poppins', serif;
+
+    --color-background-dark: #13142D;
+    --color-night-blue: #3F4D71;
+    --color-warm-black: #281805;
+    --color-base-white: #E1DEDF;
+    --color-icons-blue: #8C9FD2;
+    --color-text-link: #3DAEFF;
+
+    --shadow-1: 3px 4px 12px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+/**
+Removing default styles of the browser
+**/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**
+Style rules for buttons
+**/
+
+.white-btn, 
+.dark-btn {
+    cursor: pointer;
+    font-size: var(--h6);
+    font-family: var(--font-1);
+    border: none;
+    color: var(--color-night-blue);
+    background-color: var(--color-base-white);
+    border-radius: 24px;
+    padding: 10px 40px;
+}
+
+.dark-btn {
+    color: var(--color-base-white);
+    background-color: var(--color-night-blue);
+}
+
+/**
+Style rules for text colors
+**/
+
+.text-white {
+    color: var(--color-base-white);
+}
+
+.text-dark {
+    color: var(--color-warm-black);
+}
+
+/**
+Style rules for labels
+**/
+
+.label {
+    font-family: var(--font-1);
+    font-size: var(--label);
+    letter-spacing: var(--ls);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/**
+Style rules for Hero section
+**/
+
+/**.hero {
+    background-image: url("/assets/img/Hero.png");
+}**/
+
+
+.hero {
+    background-color: var(--color-background-dark);
+}
+
+
+/**
+Style rules for Nav bar section
+**/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: var(--color-background-dark);
+}
+
+.navbar__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-family: var(--font-1);
+    font-size: var(--h6);
+}
+
+[class ^="navbar__menu--"] {
+    color: var(--color-base-white);
+    text-decoration: none;
+}
+
+.navbar__icons {
+    display: none;
+}
+
+.navbar__icons i {
+    cursor: pointer;
+    font-size: var(--h2);
+    color: var(--color-base-white);
+}
+
+/**
+Style rules for common classes
+**/
+
+.hero__image {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    max-width: 1296px;
+    margin: auto;
+
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 80px 0;
+    gap: 25px;
+}
+
+.grid-full {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    padding: 80px 0;
+    gap: 25px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.common-title {
+    text-transform: capitalize;
+    font-size: var(--h1);
+    font-family: var(--font-1);
+    font-weight: bold;
+}
+
+.small-title {
+    text-transform: capitalize;
+    font-size: var(--h3);
+    font-family: var(--font-1);
+    font-weight: 500;
+}
+
+ul {
+    padding-left: 35px;
+}
+
+ol {
+    padding-left: 35px;
+}
+
+/**
+Style rules for footer
+**/
+
+.footerWrapper {
+    background-color: var(--color-background-dark);
+}
+
+.footerLinks {
+    display: flex;
+    color: var(--color-base-white);
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.footerLinks__copyright {
+    font-family: var(--font-1);
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 740px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+
+    .navbar__menu {
+       /* display: none;*/
+       z-index: 1;
+       background-color: var(--color-background-dark);
+       position: absolute;
+       top: 15vh;
+       width: 100%;
+       right: 0;
+       height: 100vh;
+
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 40px;
+    }
+
+    .navbar__menu--1 {
+        margin-top: -200px;
+    }
+
+    .navbar__icons {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .hidden {
+        z-index: -1;
+        opacity: 0%;
+    }
+
+    .filters {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .sectionCatalog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 568px) {
+    .container {
+        max-width: 90%px;
+    }
+}
+
+
+
+
+
+
