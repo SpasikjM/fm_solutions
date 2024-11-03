@@ -288,22 +288,6 @@ Style rules for footer
         z-index: -1;
         opacity: 0%;
     }
-
-    .filters {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-    }
-
-    .sectionCatalog {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-    }
 }
 
 @media (max-width: 568px) {
